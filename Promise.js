@@ -61,16 +61,16 @@ promisefor
     console.log("the promise is either resolved or rejected");
   });
 
-const promisefive = new Promise(function (resolve, reject) {
-  setTimeout(function () {
-    let error = true;
-    if (!error) {
-      resolve({ username: "js", password: "123" });
-    } else {
-      reject("ERROR: js WENT WRONG");
-    }
-  }, 1000);
-});
+// const promisefive = new Promise(function (resolve, reject) {
+//   setTimeout(function () {
+//     let error = true;
+//     if (!error) {
+//       resolve({ username: "js", password: "123" });
+//     } else {
+//       reject("ERROR: js WENT WRONG");
+//     }
+//   }, 1000);
+// });
 async function consumepromoisefive() {
   try {
     const response = await promisefive;
